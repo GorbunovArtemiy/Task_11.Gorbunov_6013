@@ -7,11 +7,7 @@
       rel="canonical"
       href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/"
     />
-    <meta name="viewport" content="width=device-width" initial-scale="1" />
-    <link
-      href="https://fonts.cdnfonts.com/css/times-new-roman"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css?family=Open%20Sans"
       rel="stylesheet"
@@ -74,8 +70,8 @@
         }
       </style></noscript
     >
-    <style>
-      @media screen and (min-widht: 1350px) {
+    <style amp-custom>
+      @media screen and (min-width: 1350px) {
         * {
           box-sizing: border-box;
         }
@@ -192,10 +188,6 @@
           font-weight: bold;
           font-family: "Times New Roman";
           border: solid 10px #121212;
-        }
-        .about_us_2_png {
-          width: 84px;
-          height: 54px;
         }
         .about_us_2_text_1 {
           font-size: 18px;
@@ -326,18 +318,10 @@
           display: flex;
           height: 100%;
         }
-        .caf_1_img {
-          width: 56px;
-          height: 33px;
-        }
         .caf_2 {
           display: flex;
           align-items: flex-end;
           height: 100%;
-        }
-        .caf_2_img {
-          width: 56px;
-          height: 33px;
         }
         .testimonial_inner_top_text {
           display: flex;
@@ -425,8 +409,6 @@
         }
         .team_pict_png {
           position: absolute;
-          width: 100%;
-          height: 100%;
         }
         .arrow_png {
           position: absolute;
@@ -800,7 +782,7 @@
           align-items: center;
         }
       }
-      @media screen and (min-widht: 600px) and (max-widht: 1350px) {
+      @media screen and (min-width: 600px) and (max-width: 1350px) {
         * {
           box-sizing: border-box;
         }
@@ -923,10 +905,6 @@
           font-weight: bold;
           font-family: "Times New Roman";
           border: solid 10px #121212;
-        }
-        .about_us_2_png {
-          width: 84px;
-          height: 54px;
         }
         .about_us_2_text_1 {
           font-size: 18px;
@@ -1057,18 +1035,10 @@
           display: flex;
           height: 100%;
         }
-        .caf_1_img {
-          width: 56px;
-          height: 33px;
-        }
         .caf_2 {
           display: flex;
           align-items: flex-end;
           height: 100%;
-        }
-        .caf_2_img {
-          width: 56px;
-          height: 33px;
         }
         .testimonial_inner_top_text {
           display: flex;
@@ -1156,8 +1126,6 @@
         }
         .team_pict_png {
           position: absolute;
-          width: 100%;
-          height: 100%;
         }
         .arrow_png {
           position: absolute;
@@ -1534,7 +1502,7 @@
           align-items: center;
         }
       }
-      @media screen and (min-widht: 0px) and (max-widht: 600px) {
+      @media screen and (min-width: 0px) and (max-width: 600px) {
         * {
           box-sizing: border-box;
         }
@@ -1658,10 +1626,6 @@
           font-weight: bold;
           font-family: "Times New Roman";
           border: solid 10px #121212;
-        }
-        .about_us_2_png {
-          width: 84px;
-          height: 54px;
         }
         .about_us_2_text_1 {
           font-size: 18px;
@@ -1792,18 +1756,10 @@
           display: flex;
           height: 100%;
         }
-        .caf_1_img {
-          width: 56px;
-          height: 33px;
-        }
         .caf_2 {
           display: flex;
           align-items: flex-end;
           height: 100%;
-        }
-        .caf_2_img {
-          width: 56px;
-          height: 33px;
         }
         .testimonial_inner_top_text {
           display: flex;
@@ -1892,8 +1848,6 @@
         }
         .team_pict_png {
           position: absolute;
-          width: 100%;
-          height: 100%;
         }
         .arrow_png {
           position: absolute;
@@ -2289,7 +2243,12 @@
             </li>
           </ul>
           <a class="logo_a" href="index.html">
-            <img src="picture/header_element1.png" alt="logo" />
+            <amp-img
+              src="picture/header_element1.png"
+              width="260"
+              height="136"
+              alt="logo"
+            ></amp-img>
           </a>
           <ul class="right_ul">
             <li class="right_li">
@@ -2312,11 +2271,12 @@
         </div>
         <div class="about_us_2">
           <div class="about_us_2_inner">
-            <img
-              class="about_us_2_png"
+            <amp-img
               src="picture/tatoo_design.png"
+              width="84"
+              height="58"
               alt="logo"
-            />
+            ></amp-img>
             <p class="about_us_2_text_1">
               Aliquam ac justo interdum, elementum liqula et, condimentum orci.
               lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -2340,22 +2300,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2366,22 +2346,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2392,22 +2392,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2418,22 +2438,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2444,22 +2484,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2470,22 +2530,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2496,22 +2576,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2522,22 +2622,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2548,22 +2668,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2574,22 +2714,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2600,22 +2760,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2626,22 +2806,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2652,7 +2852,12 @@
         <div class="testimonial_inner">
           <div class="testimonial_inner_top">
             <div class="caf_1">
-              <img class="caf_1_img" src="picture/livello_.png" alt="caf" />
+              <amp-img
+                width="56"
+                height="33"
+                src="picture/livello_.png"
+                alt="caf"
+              ></amp-img>
             </div>
             <div class="testimonial_inner_top_text">
               <p class="testimonial_inner_top_p">
@@ -2661,7 +2866,12 @@
               </p>
             </div>
             <div class="caf_2">
-              <img class="caf_2_img" src="picture/livello_1.png" alt="caf" />
+              <amp-img
+                width="56"
+                height="33"
+                src="picture/livello_1.png"
+                alt="caf"
+              ></amp-img>
             </div>
           </div>
           <div class="testimonial_inner_bottom">
@@ -2676,12 +2886,20 @@
           </div>
           <div class="team_pict_2">
             <div class="team_pict_png_arrow">
-              <img
+              <amp-img
                 class="team_pict_png"
+                width="500"
+                height="500"
                 src="picture/img18.png"
                 alt="Corey Miller"
-              />
-              <img class="arrow_png" src="picture/arrow.png" alt="Arrow" />
+              ></amp-img>
+              <amp-img
+                class="arrow_png"
+                width="30"
+                height="34"
+                src="picture/arrow.png"
+                alt="Arrow"
+              ></amp-img>
             </div>
             <div class="team_pict_block">
               <div class="team_pict_block_inner">
@@ -2697,12 +2915,42 @@
                   iaculis mi nulla et risus.
                 </p>
                 <div class="team_links">
-                  <img src="picture/facebook.png" alt="Facebook" />
-                  <img src="picture/twitter.png" alt="Twitter" />
-                  <img src="picture/t.png" alt="Telegram" />
-                  <img src="picture/in.png" alt="LinkedIn" />
-                  <img src="picture/instargam.png" alt="Instargam" />
-                  <img src="picture/g+.png" alt="Google" />
+                  <amp-img
+                    src="picture/facebook.png"
+                    width="17"
+                    height="34"
+                    alt="Facebook"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/twitter.png"
+                    width="32"
+                    height="26"
+                    alt="Twitter"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/t.png"
+                    width="20"
+                    height="32"
+                    alt="Telegram"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/in.png"
+                    width="31"
+                    height="30"
+                    alt="LinkedIn"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/instargam.png"
+                    width="31"
+                    height="32"
+                    alt="Instargam"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/g+.png"
+                    width="34"
+                    height="33"
+                    alt="Google"
+                  ></amp-img>
                 </div>
               </div>
             </div>
@@ -2711,12 +2959,20 @@
         <div class="team_row_2">
           <div class="team_pict_3">
             <div class="team_pict_png_arrow">
-              <img
+              <amp-img
                 class="team_pict_png"
+                width="500"
+                height="500"
                 src="picture/img19.png"
                 alt="Kat Von D"
-              />
-              <img class="arrow_png" src="picture/arrow.png" alt="Arrow" />
+              ></amp-img>
+              <amp-img
+                class="arrow_png"
+                width="30"
+                height="34"
+                src="picture/arrow.png"
+                alt="Arrow"
+              ></amp-img>
             </div>
             <div class="team_pict_block">
               <div class="team_pict_block_inner">
@@ -2732,12 +2988,42 @@
                   iaculis mi nulla et risus.
                 </p>
                 <div class="team_links">
-                  <img src="picture/facebook.png" alt="Facebook" />
-                  <img src="picture/twitter.png" alt="Twitter" />
-                  <img src="picture/t.png" alt="Telegram" />
-                  <img src="picture/in.png" alt="LinkedIn" />
-                  <img src="picture/instargam.png" alt="Instargam" />
-                  <img src="picture/g+.png" alt="Google" />
+                  <amp-img
+                    src="picture/facebook.png"
+                    width="17"
+                    height="34"
+                    alt="Facebook"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/twitter.png"
+                    width="32"
+                    height="26"
+                    alt="Twitter"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/t.png"
+                    width="20"
+                    height="32"
+                    alt="Telegram"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/in.png"
+                    width="31"
+                    height="30"
+                    alt="LinkedIn"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/instargam.png"
+                    width="31"
+                    height="32"
+                    alt="Instargam"
+                  ></amp-img>
+                  <amp-img
+                    src="picture/g+.png"
+                    width="34"
+                    height="33"
+                    alt="Google"
+                  ></amp-img>
                 </div>
               </div>
             </div>
@@ -2761,7 +3047,12 @@
       </div>
       <div class="twitter">
         <div class="twitter_inner">
-          <img src="picture/twitter_white.png" alt="Twitter" />
+          <amp-img
+            src="picture/twitter_white.png"
+            width="43"
+            height="35"
+            alt="Twitter"
+          ></amp-img>
           <p class="twitter_inner_p1">
             RT @collis: Trade growth ideas with other founders. Look for ways to
             cross promote. Small starups today may be big friends later. (9/10)
@@ -2778,22 +3069,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2804,22 +3115,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2830,22 +3161,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2856,22 +3207,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2882,22 +3253,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2908,22 +3299,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2934,22 +3345,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2960,22 +3391,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -2986,22 +3437,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3012,22 +3483,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3038,22 +3529,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3064,22 +3575,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3090,22 +3621,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3116,22 +3667,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3142,22 +3713,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3168,22 +3759,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3194,22 +3805,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3220,22 +3851,42 @@
             <div class="picture_active_inner">
               <div class="picture_active_inner_element_first_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/lupa.png" alt="Lupa" />
+                  <amp-img
+                    src="picture/lupa.png"
+                    width="33"
+                    height="33"
+                    alt="Lupa"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/chain.png" alt="Chain" />
+                  <amp-img
+                    src="picture/chain.png"
+                    width="22"
+                    height="28"
+                    alt="Chain"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/idea.png" alt="Idea" />
+                  <amp-img
+                    src="picture/idea.png"
+                    width="29"
+                    height="29"
+                    alt="Idea"
+                  ></amp-img>
                 </a>
               </div>
               <div class="picture_active_inner_element_second_row">
                 <a class="picture_active_inner_element_a" href="index.html">
-                  <img src="picture/heart.png" alt="Heart" />
+                  <amp-img
+                    src="picture/heart.png"
+                    width="31"
+                    height="26"
+                    alt="Heart"
+                  ></amp-img>
                 </a>
               </div>
             </div>
@@ -3273,12 +3924,42 @@
               </div>
             </div>
             <div class="team_links">
-              <img src="picture/facebook.png" alt="Facebook" />
-              <img src="picture/twitter.png" alt="Twitter" />
-              <img src="picture/t.png" alt="Telegram" />
-              <img src="picture/in.png" alt="LinkedIn" />
-              <img src="picture/instargam.png" alt="Instargam" />
-              <img src="picture/g+.png" alt="Google" />
+              <amp-img
+                src="picture/facebook.png"
+                width="17"
+                height="34"
+                alt="Facebook"
+              ></amp-img>
+              <amp-img
+                src="picture/twitter.png"
+                width="32"
+                height="26"
+                alt="Twitter"
+              ></amp-img>
+              <amp-img
+                src="picture/t.png"
+                width="20"
+                height="32"
+                alt="Telegram"
+              ></amp-img>
+              <amp-img
+                src="picture/in.png"
+                width="31"
+                height="30"
+                alt="LinkedIn"
+              ></amp-img>
+              <amp-img
+                src="picture/instargam.png"
+                width="31"
+                height="32"
+                alt="Instargam"
+              ></amp-img>
+              <amp-img
+                src="picture/g+.png"
+                width="34"
+                height="33"
+                alt="Google"
+              ></amp-img>
             </div>
           </div>
           <div class="contact_us_inner_right">
@@ -3320,7 +4001,12 @@
             </li>
           </ul>
           <a class="logo_a" href="index.html">
-            <img src="picture/header_element1.png" alt="logo" />
+            <amp-img
+              src="picture/header_element1.png"
+              width="260"
+              height="137"
+              alt="logo"
+            ></amp-img>
           </a>
           <ul class="right_ul">
             <li class="right_li">
@@ -3336,7 +4022,13 @@
         </nav>
       </div>
       <div class="footer_bottom">
-        <img class="copyright_png" src="picture/copy.png" alt="Copyright" />
+        <amp-img
+          class="copyright_png"
+          src="picture/copy.png"
+          width="15"
+          height="15"
+          alt="Copyright"
+        ></amp-img>
         <p class="footer_bottom_p">
           2014 InkTattoo. All right reserved - Designed by theuncreativelab.com
         </p>
