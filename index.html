@@ -1,0 +1,3346 @@
+<!DOCTYPE html>
+<html amp lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task num.11</title>
+    <link
+      rel="canonical"
+      href="https://amp.dev/ru/documentation/guides-and-tutorials/start/create/basic_markup/"
+    />
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <link
+      href="https://fonts.cdnfonts.com/css/times-new-roman"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open%20Sans"
+      rel="stylesheet"
+    />
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+    <style>
+      @media screen and (min-widht: 1350px) {
+        * {
+          box-sizing: border-box;
+        }
+        a {
+          text-decoration: none;
+        }
+        .slider {
+          width: 100%;
+          height: 500px;
+          background-image: url("picture/header.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+        }
+        body {
+          margin: 0;
+        }
+        header {
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          padding-top: 10px;
+        }
+        nav {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+        ul {
+          height: 137px;
+          display: flex;
+          list-style-type: none;
+          padding: 0;
+          align-items: center;
+          justify-content: space-around;
+          flex-grow: 1;
+          flex-shrink: 1;
+          margin: 0;
+        }
+        li {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .left_ul {
+          padding-right: 10px;
+        }
+        .right_ul {
+          padding-left: 10px;
+        }
+        .logo_a {
+          width: 260px;
+          height: 137px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-grow: 1;
+          flex-shrink: 1;
+        }
+        .menu_a {
+          white-space: nowrap;
+          padding: 5px;
+          margin: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          letter-spacing: 0px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #1a1a1a;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .menu_a:hover {
+          border-bottom: solid 2px #1a1a1a;
+        }
+        .about_us {
+          width: 100%;
+          height: 500px;
+          display: flex;
+        }
+        .about_us_1 {
+          width: 50%;
+          background-image: url("picture/about_us.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about_us_2 {
+          width: 50%;
+          background-color: #f2efe5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about_us_2_inner {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .about {
+          white-space: nowrap;
+          padding: 30px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        .about_us_2_png {
+          width: 84px;
+          height: 54px;
+        }
+        .about_us_2_text_1 {
+          font-size: 18px;
+          color: #000000;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .about_us_2_text_2 {
+          font-size: 16px;
+          color: #000000;
+          font-family: "Times New Roman";
+        }
+        .pictrow {
+          display: grid;
+          height: 500px;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        .picture {
+          background-position: center center;
+          background-size: cover;
+        }
+        #picture_1 {
+          background-image: url("picture/studio_galery1.png");
+        }
+        #picture_2 {
+          background-image: url("picture/studio_galery2.png");
+        }
+        #picture_3 {
+          background-image: url("picture/studio_galery3.png");
+        }
+        #picture_4 {
+          background-image: url("picture/studio_galery4.png");
+        }
+        #picture_5 {
+          background-image: url("picture/studio_galery5.png");
+        }
+        #picture_6 {
+          background-image: url("picture/studio_galery6.png");
+        }
+        #picture_7 {
+          background-image: url("picture/studio_galery7.png");
+        }
+        #picture_8 {
+          background-image: url("picture/studio_galery8.png");
+        }
+        #picture_9 {
+          background-image: url("picture/studio_galery9.png");
+        }
+        #picture_10 {
+          background-image: url("picture/studio_galery10.png");
+        }
+        #picture_11 {
+          background-image: url("picture/studio_galery11.png");
+        }
+        #picture_12 {
+          background-image: url("picture/studio_galery12.png");
+        }
+        .picture_active {
+          width: 100%;
+          height: 100%;
+          background-color: #cbc7b5;
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active:hover {
+          opacity: 0.659;
+        }
+        .picture_active_inner {
+          width: 50%;
+          height: 50%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .picture_active_inner_element_first_row {
+          height: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_second_row {
+          height: 50%;
+          width: 33%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_a {
+          height: 90%;
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_a:hover {
+          background-color: #aeaeae;
+        }
+        .testimonial {
+          width: 100%;
+          height: 350px;
+          background-image: url("picture/livello_2b.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .testimonial_inner {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .testimonial_inner_top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 50%;
+        }
+        .caf_1 {
+          display: flex;
+          height: 100%;
+        }
+        .caf_1_img {
+          width: 56px;
+          height: 33px;
+        }
+        .caf_2 {
+          display: flex;
+          align-items: flex-end;
+          height: 100%;
+        }
+        .caf_2_img {
+          width: 56px;
+          height: 33px;
+        }
+        .testimonial_inner_top_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70%;
+        }
+        .testimonial_inner_top_p {
+          font-size: 24px;
+          color: #f2efe5;
+          font-weight: bold;
+          font-style: italic;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .testimonial_inner_bottom {
+          display: flex;
+          justify-content: flex-end;
+          width: 70%;
+        }
+        .testimonial_inner_bottom_p {
+          font-size: 18px;
+          color: #f2efe5;
+          font-style: italic;
+          font-family: "Times New Roman";
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .team_row {
+          height: 1000px;
+          width: 100%;
+        }
+        .team_row_1 {
+          display: grid;
+          height: 50%;
+          grid-template-columns: 1fr 2fr;
+        }
+        .team_row_2 {
+          display: grid;
+          height: 50%;
+          grid-template-columns: 2fr 1fr;
+        }
+        .team_pict_1 {
+          background-image: url("picture/img_bg1.png");
+          background-position: top center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team_pict_2,
+        .team_pict_3 {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          background-color: #cbc7b5;
+        }
+        .team_pict_4 {
+          background-color: #f2efe5;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team {
+          white-space: nowrap;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 80px;
+          padding-right: 80px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        .team_pict_png_arrow {
+          width: 50%;
+          height: 100%;
+          position: relative;
+        }
+        .team_pict_png {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        .arrow_png {
+          position: absolute;
+          top: 20%;
+          right: -2px;
+        }
+        .team_pict_block {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team_pict_block_inner {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .team_pict_block_inner_p1 {
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #000000;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .team_pict_block_inner_p2 {
+          font-size: 14px;
+          color: #000000;
+          font-family: "Open Sans";
+          margin-bottom: 50px;
+        }
+        .team_links {
+          display: flex;
+          justify-content: space-around;
+        }
+        .team_links img:hover {
+          background-color: #aeaeae;
+        }
+        .team_pict_4_block_inner {
+          width: 60%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .team_pict_4_block_inner_p1 {
+          font-size: 14px;
+          line-height: 18px;
+          text-transform: uppercase;
+          color: #000000;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          margin-bottom: 0;
+        }
+        .team_pict_4_block_inner_p2 {
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          color: #000000;
+          font-family: "Times New Roman";
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+        .team_pict_4_block_inner_input {
+          opacity: 0.451;
+          font-size: 12px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #333333;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: 1px solid #000000;
+          height: 40px;
+          margin-bottom: 20px;
+        }
+        .team_pict_4_block_inner_button {
+          font-size: 12px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-family: "Times New Roman";
+          background-color: #9a977a;
+          height: 40px;
+        }
+        .twitter {
+          width: 100%;
+          height: 350px;
+          background-image: url("picture/img_bg.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .twitter_inner {
+          width: 60%;
+          height: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .twitter_inner_p1 {
+          margin-top: 30px;
+          font-size: 22px;
+          line-height: 22px;
+          color: #f2efe5;
+          font-weight: bold;
+          font-style: italic;
+          font-family: "Times New Roman";
+        }
+        .gallery {
+          width: 100%;
+          height: 1400px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .gal_picture {
+          background-position: center center;
+          background-size: cover;
+          width: 20%;
+          height: 25%;
+        }
+        .gal_picture_first {
+          width: 40%;
+          height: 25%;
+          background-color: #afab9b;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .gal_picture_first_p {
+          white-space: nowrap;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 80px;
+          padding-right: 80px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        #gal_picture_2 {
+          background-image: url("picture/img0.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_3 {
+          background-image: url("picture/img1.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_4 {
+          background-image: url("picture/img2.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_5 {
+          background-image: url("picture/img3.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_6 {
+          background-image: url("picture/img4.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_7 {
+          background-image: url("picture/img5.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_8 {
+          background-image: url("picture/img6.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_9 {
+          background-image: url("picture/img7.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_10 {
+          background-image: url("picture/img8.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_11 {
+          background-image: url("picture/img9.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_12 {
+          background-image: url("picture/img10.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_13 {
+          background-image: url("picture/img11.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_14 {
+          background-image: url("picture/img12.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_15 {
+          background-image: url("picture/img13.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_16 {
+          background-image: url("picture/img14.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_17 {
+          background-image: url("picture/img15.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_18 {
+          background-image: url("picture/img16.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_19 {
+          background-image: url("picture/img17.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        .contact_us {
+          width: 100%;
+          height: 900px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ccc8b6;
+        }
+        .contact_us_inner {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .contact_us_inner_left,
+        .contact_us_inner_right {
+          width: 45%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .contact_us_inner_left_logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .contact_us_inner_left_p2 {
+          font-size: 18px;
+          color: #000000;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .contact_us_inner_left_p1 {
+          white-space: nowrap;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+          padding-left: 60px;
+          padding-right: 60px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin: 0;
+        }
+        .contact_us_inner_left_info_work {
+          display: flex;
+          justify-content: space-between;
+        }
+        .contact_us_inner_left_info,
+        .contact_us_inner_left_work {
+          width: 45%;
+        }
+        .contact_us_inner_right_input {
+          opacity: 0.431;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #333333;
+          font-family: "Times New Roman";
+          height: 60px;
+          border: 2px solid #000000;
+          background-color: #ccc8b6;
+          padding-left: 30px;
+        }
+        .contact_us_inner_right_textarea {
+          opacity: 0.431;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #333333;
+          font-family: "Times New Roman";
+          background-color: #ccc8b6;
+          padding-left: 30px;
+          padding-top: 15px;
+          border: 2px solid #000000;
+          height: 220px;
+        }
+        .contact_us_inner_right_button {
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          height: 60px;
+          background-color: #9a977a;
+        }
+        .map {
+          width: 100%;
+          height: 800px;
+          background-image: url("picture/map.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        footer {
+          width: 100%;
+          height: 500px;
+          background-color: #aeaeae;
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer_top {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          height: 80%;
+          width: 50%;
+        }
+        .footer_bottom {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+        .copyright_png {
+          width: 15px;
+          height: 15px;
+        }
+        .footer_bottom_p {
+          font-size: 12px;
+          line-height: 22px;
+          color: #000000;
+          font-family: "Roboto";
+          font-weight: bold;
+        }
+        .footer_nav {
+          align-items: center;
+        }
+      }
+      @media screen and (min-widht: 600px) and (max-widht: 1350px) {
+        * {
+          box-sizing: border-box;
+        }
+        a {
+          text-decoration: none;
+        }
+        .slider {
+          width: 100%;
+          height: 500px;
+          background-image: url("picture/header.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+        }
+        body {
+          margin: 0;
+        }
+        header {
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          padding-top: 10px;
+        }
+        nav {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+        }
+        ul {
+          height: 137px;
+          display: flex;
+          list-style-type: none;
+          padding: 0;
+          align-items: center;
+          justify-content: space-around;
+          flex-grow: 1;
+          flex-shrink: 1;
+          margin: 0;
+        }
+        li {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .left_ul {
+          padding-right: 10px;
+        }
+        .right_ul {
+          padding-left: 10px;
+        }
+        .logo_a {
+          width: 260px;
+          height: 137px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-grow: 1;
+          flex-shrink: 1;
+          order: -1;
+        }
+        .menu_a {
+          white-space: nowrap;
+          padding: 5px;
+          margin: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          letter-spacing: 0px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #1a1a1a;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .menu_a:hover {
+          border-bottom: solid 2px #1a1a1a;
+        }
+        .about_us {
+          width: 100%;
+          height: 1000px;
+          display: flex;
+          flex-direction: column;
+        }
+        .about_us_1 {
+          width: 100%;
+          height: 50%;
+          background-image: url("picture/about_us.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about_us_2 {
+          width: 100%;
+          height: 50%;
+          background-color: #f2efe5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about_us_2_inner {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .about {
+          white-space: nowrap;
+          padding: 30px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        .about_us_2_png {
+          width: 84px;
+          height: 54px;
+        }
+        .about_us_2_text_1 {
+          font-size: 18px;
+          color: #000000;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .about_us_2_text_2 {
+          font-size: 16px;
+          color: #000000;
+          font-family: "Times New Roman";
+        }
+        .pictrow {
+          display: grid;
+          height: 1000px;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .picture {
+          background-position: center center;
+          background-size: cover;
+        }
+        #picture_1 {
+          background-image: url("picture/studio_galery1.png");
+        }
+        #picture_2 {
+          background-image: url("picture/studio_galery2.png");
+        }
+        #picture_3 {
+          background-image: url("picture/studio_galery3.png");
+        }
+        #picture_4 {
+          background-image: url("picture/studio_galery4.png");
+        }
+        #picture_5 {
+          background-image: url("picture/studio_galery5.png");
+        }
+        #picture_6 {
+          background-image: url("picture/studio_galery6.png");
+        }
+        #picture_7 {
+          background-image: url("picture/studio_galery7.png");
+        }
+        #picture_8 {
+          background-image: url("picture/studio_galery8.png");
+        }
+        #picture_9 {
+          background-image: url("picture/studio_galery9.png");
+        }
+        #picture_10 {
+          background-image: url("picture/studio_galery10.png");
+        }
+        #picture_11 {
+          background-image: url("picture/studio_galery11.png");
+        }
+        #picture_12 {
+          background-image: url("picture/studio_galery12.png");
+        }
+        .picture_active {
+          width: 100%;
+          height: 100%;
+          background-color: #cbc7b5;
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active:hover {
+          opacity: 0.659;
+        }
+        .picture_active_inner {
+          width: 50%;
+          height: 50%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .picture_active_inner_element_first_row {
+          height: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_second_row {
+          height: 50%;
+          width: 33%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_a {
+          height: 90%;
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_a:hover {
+          background-color: #aeaeae;
+        }
+        .testimonial {
+          width: 100%;
+          height: 350px;
+          background-image: url("picture/livello_2b.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .testimonial_inner {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .testimonial_inner_top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 50%;
+        }
+        .caf_1 {
+          display: flex;
+          height: 100%;
+        }
+        .caf_1_img {
+          width: 56px;
+          height: 33px;
+        }
+        .caf_2 {
+          display: flex;
+          align-items: flex-end;
+          height: 100%;
+        }
+        .caf_2_img {
+          width: 56px;
+          height: 33px;
+        }
+        .testimonial_inner_top_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70%;
+        }
+        .testimonial_inner_top_p {
+          font-size: 24px;
+          color: #f2efe5;
+          font-weight: bold;
+          font-style: italic;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .testimonial_inner_bottom {
+          display: flex;
+          justify-content: flex-end;
+          width: 70%;
+        }
+        .testimonial_inner_bottom_p {
+          font-size: 18px;
+          color: #f2efe5;
+          font-style: italic;
+          font-family: "Times New Roman";
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .team_row {
+          height: 2000px;
+          width: 100%;
+        }
+        .team_row_1 {
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+        }
+        .team_row_2 {
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+        }
+        .team_pict_1 {
+          background-image: url("picture/img_bg1.png");
+          background-position: top center;
+          background-size: cover;
+          width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team_pict_2,
+        .team_pict_3 {
+          display: flex;
+          width: 100%;
+          height: 50%;
+          background-color: #cbc7b5;
+        }
+        .team_pict_4 {
+          background-color: #f2efe5;
+          width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team {
+          white-space: nowrap;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 80px;
+          padding-right: 80px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        .team_pict_png_arrow {
+          width: 50%;
+          height: 100%;
+          position: relative;
+        }
+        .team_pict_png {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        .arrow_png {
+          position: absolute;
+          top: 20%;
+          right: -2px;
+        }
+        .team_pict_block {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team_pict_block_inner {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .team_pict_block_inner_p1 {
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #000000;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .team_pict_block_inner_p2 {
+          font-size: 14px;
+          color: #000000;
+          font-family: "Open Sans";
+          margin-bottom: 50px;
+        }
+        .team_links {
+          display: flex;
+          justify-content: space-around;
+        }
+        .team_links img:hover {
+          background-color: #aeaeae;
+        }
+        .team_pict_4_block_inner {
+          width: 60%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .team_pict_4_block_inner_p1 {
+          font-size: 14px;
+          line-height: 18px;
+          text-transform: uppercase;
+          color: #000000;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          margin-bottom: 0;
+        }
+        .team_pict_4_block_inner_p2 {
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          color: #000000;
+          font-family: "Times New Roman";
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+        .team_pict_4_block_inner_input {
+          opacity: 0.451;
+          font-size: 12px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #333333;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: 1px solid #000000;
+          height: 40px;
+          margin-bottom: 20px;
+        }
+        .team_pict_4_block_inner_button {
+          font-size: 12px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-family: "Times New Roman";
+          background-color: #9a977a;
+          height: 40px;
+        }
+        .twitter {
+          width: 100%;
+          height: 350px;
+          background-image: url("picture/img_bg.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .twitter_inner {
+          width: 60%;
+          height: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .twitter_inner_p1 {
+          margin-top: 30px;
+          font-size: 22px;
+          line-height: 22px;
+          color: #f2efe5;
+          font-weight: bold;
+          font-style: italic;
+          font-family: "Times New Roman";
+        }
+        .gallery {
+          width: 100%;
+          height: 2000px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .gal_picture {
+          background-position: center center;
+          background-size: cover;
+          width: 50%;
+          height: 10%;
+        }
+        .gal_picture_first {
+          width: 100%;
+          height: 10%;
+          background-color: #afab9b;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .gal_picture_first_p {
+          white-space: nowrap;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        #gal_picture_2 {
+          background-image: url("picture/img0.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_3 {
+          background-image: url("picture/img1.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_4 {
+          background-image: url("picture/img2.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_5 {
+          background-image: url("picture/img3.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_6 {
+          background-image: url("picture/img4.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_7 {
+          background-image: url("picture/img5.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_8 {
+          background-image: url("picture/img6.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_9 {
+          background-image: url("picture/img7.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_10 {
+          background-image: url("picture/img8.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_11 {
+          background-image: url("picture/img9.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_12 {
+          background-image: url("picture/img10.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_13 {
+          background-image: url("picture/img11.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_14 {
+          background-image: url("picture/img12.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_15 {
+          background-image: url("picture/img13.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_16 {
+          background-image: url("picture/img14.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_17 {
+          background-image: url("picture/img15.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_18 {
+          background-image: url("picture/img16.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_19 {
+          background-image: url("picture/img17.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        .contact_us {
+          width: 100%;
+          height: 1500px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ccc8b6;
+        }
+        .contact_us_inner {
+          width: 90%;
+          height: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .contact_us_inner_left,
+        .contact_us_inner_right {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+        .contact_us_inner_left_logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .contact_us_inner_left_p2 {
+          font-size: 18px;
+          color: #000000;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .contact_us_inner_left_p1 {
+          white-space: nowrap;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin: 0;
+        }
+        .contact_us_inner_left_info_work {
+          display: flex;
+          justify-content: space-between;
+        }
+        .contact_us_inner_left_info,
+        .contact_us_inner_left_work {
+          width: 45%;
+        }
+        .contact_us_inner_right_input {
+          opacity: 0.431;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #333333;
+          font-family: "Times New Roman";
+          height: 60px;
+          border: 2px solid #000000;
+          background-color: #ccc8b6;
+          padding-left: 30px;
+        }
+        .contact_us_inner_right_textarea {
+          opacity: 0.431;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #333333;
+          font-family: "Times New Roman";
+          background-color: #ccc8b6;
+          padding-left: 30px;
+          padding-top: 15px;
+          border: 2px solid #000000;
+          height: 220px;
+        }
+        .contact_us_inner_right_button {
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          height: 60px;
+          background-color: #9a977a;
+        }
+        .map {
+          width: 100%;
+          height: 800px;
+          background-image: url("picture/map.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        footer {
+          width: 100%;
+          height: 500px;
+          background-color: #aeaeae;
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer_top {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          height: 80%;
+          width: 50%;
+          margin-top: 20px;
+        }
+        .footer_bottom {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+        .copyright_png {
+          width: 15px;
+          height: 15px;
+        }
+        .footer_bottom_p {
+          font-size: 12px;
+          line-height: 22px;
+          color: #000000;
+          font-family: "Roboto";
+          font-weight: bold;
+        }
+        .footer_nav {
+          align-items: center;
+        }
+      }
+      @media screen and (min-widht: 0px) and (max-widht: 600px) {
+        * {
+          box-sizing: border-box;
+        }
+        a {
+          text-decoration: none;
+        }
+        .slider {
+          width: 100%;
+          height: 500px;
+          background-image: url("picture/header.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+        }
+        body {
+          min-width: 300px;
+          margin: 0;
+        }
+        header {
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          padding-top: 10px;
+        }
+        nav {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+        }
+        ul {
+          height: 137px;
+          display: flex;
+          list-style-type: none;
+          padding: 0;
+          align-items: center;
+          justify-content: space-around;
+          flex-grow: 1;
+          flex-shrink: 1;
+          margin: 0;
+        }
+        li {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .left_ul {
+          padding-right: 10px;
+        }
+        .right_ul {
+          padding-left: 10px;
+        }
+        .logo_a {
+          width: 260px;
+          height: 137px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-grow: 1;
+          flex-shrink: 1;
+          order: -1;
+        }
+        .menu_a {
+          white-space: nowrap;
+          padding: 5px;
+          margin: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          letter-spacing: 0px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #1a1a1a;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .menu_a:hover {
+          border-bottom: solid 2px #1a1a1a;
+        }
+        .about_us {
+          width: 100%;
+          height: 1000px;
+          display: flex;
+          flex-direction: column;
+        }
+        .about_us_1 {
+          width: 100%;
+          height: 50%;
+          background-image: url("picture/about_us.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about_us_2 {
+          width: 100%;
+          height: 50%;
+          background-color: #f2efe5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .about_us_2_inner {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .about {
+          white-space: nowrap;
+          padding: 30px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        .about_us_2_png {
+          width: 84px;
+          height: 54px;
+        }
+        .about_us_2_text_1 {
+          font-size: 18px;
+          color: #000000;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .about_us_2_text_2 {
+          font-size: 16px;
+          color: #000000;
+          font-family: "Times New Roman";
+        }
+        .pictrow {
+          display: grid;
+          height: 1000px;
+          grid-template-columns: 1fr 1fr;
+        }
+        .picture {
+          background-position: center center;
+          background-size: cover;
+        }
+        #picture_1 {
+          background-image: url("picture/studio_galery1.png");
+        }
+        #picture_2 {
+          background-image: url("picture/studio_galery2.png");
+        }
+        #picture_3 {
+          background-image: url("picture/studio_galery3.png");
+        }
+        #picture_4 {
+          background-image: url("picture/studio_galery4.png");
+        }
+        #picture_5 {
+          background-image: url("picture/studio_galery5.png");
+        }
+        #picture_6 {
+          background-image: url("picture/studio_galery6.png");
+        }
+        #picture_7 {
+          background-image: url("picture/studio_galery7.png");
+        }
+        #picture_8 {
+          background-image: url("picture/studio_galery8.png");
+        }
+        #picture_9 {
+          background-image: url("picture/studio_galery9.png");
+        }
+        #picture_10 {
+          background-image: url("picture/studio_galery10.png");
+        }
+        #picture_11 {
+          background-image: url("picture/studio_galery11.png");
+        }
+        #picture_12 {
+          background-image: url("picture/studio_galery12.png");
+        }
+        .picture_active {
+          width: 100%;
+          height: 100%;
+          background-color: #cbc7b5;
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active:hover {
+          opacity: 0.659;
+        }
+        .picture_active_inner {
+          width: 80%;
+          height: 50%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .picture_active_inner_element_first_row {
+          height: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_second_row {
+          height: 50%;
+          width: 33%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_a {
+          height: 90%;
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .picture_active_inner_element_a:hover {
+          background-color: #aeaeae;
+        }
+        .testimonial {
+          width: 100%;
+          height: 700px;
+          background-image: url("picture/livello_2b.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .testimonial_inner {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .testimonial_inner_top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 50%;
+        }
+        .caf_1 {
+          display: flex;
+          height: 100%;
+        }
+        .caf_1_img {
+          width: 56px;
+          height: 33px;
+        }
+        .caf_2 {
+          display: flex;
+          align-items: flex-end;
+          height: 100%;
+        }
+        .caf_2_img {
+          width: 56px;
+          height: 33px;
+        }
+        .testimonial_inner_top_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70%;
+        }
+        .testimonial_inner_top_p {
+          font-size: 24px;
+          color: #f2efe5;
+          font-weight: bold;
+          font-style: italic;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .testimonial_inner_bottom {
+          display: flex;
+          justify-content: flex-end;
+          width: 70%;
+        }
+        .testimonial_inner_bottom_p {
+          font-size: 18px;
+          color: #f2efe5;
+          font-style: italic;
+          font-family: "Times New Roman";
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .team_row {
+          height: 3000px;
+          width: 100%;
+        }
+        .team_row_1 {
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+        }
+        .team_row_2 {
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+        }
+        .team_pict_1 {
+          background-image: url("picture/img_bg1.png");
+          background-position: top center;
+          background-size: cover;
+          width: 100%;
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team_pict_2,
+        .team_pict_3 {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 75%;
+          background-color: #cbc7b5;
+        }
+        .team_pict_4 {
+          background-color: #f2efe5;
+          width: 100%;
+          height: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team {
+          white-space: nowrap;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 80px;
+          padding-right: 80px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        .team_pict_png_arrow {
+          width: 100%;
+          height: 50%;
+          position: relative;
+        }
+        .team_pict_png {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+        .arrow_png {
+          position: absolute;
+          top: 20%;
+          right: 0px;
+        }
+        .team_pict_block {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .team_pict_block_inner {
+          width: 80%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .team_pict_block_inner_p1 {
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #000000;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .team_pict_block_inner_p2 {
+          font-size: 14px;
+          color: #000000;
+          font-family: "Open Sans";
+          margin-bottom: 50px;
+        }
+        .team_links {
+          display: flex;
+          justify-content: space-around;
+        }
+        .team_links img:hover {
+          background-color: #aeaeae;
+        }
+        .team_pict_4_block_inner {
+          width: 60%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .team_pict_4_block_inner_p1 {
+          font-size: 14px;
+          line-height: 18px;
+          text-transform: uppercase;
+          color: #000000;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          margin-bottom: 0;
+        }
+        .team_pict_4_block_inner_p2 {
+          font-size: 12px;
+          line-height: 12px;
+          text-transform: uppercase;
+          color: #000000;
+          font-family: "Times New Roman";
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+        .team_pict_4_block_inner_input {
+          opacity: 0.451;
+          font-size: 12px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #333333;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: 1px solid #000000;
+          height: 40px;
+          margin-bottom: 20px;
+        }
+        .team_pict_4_block_inner_button {
+          font-size: 12px;
+          line-height: 21px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-family: "Times New Roman";
+          background-color: #9a977a;
+          height: 40px;
+        }
+        .twitter {
+          width: 100%;
+          height: 350px;
+          background-image: url("picture/img_bg.png");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .twitter_inner {
+          width: 60%;
+          height: 60%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .twitter_inner_p1 {
+          margin-top: 30px;
+          font-size: 22px;
+          line-height: 22px;
+          color: #f2efe5;
+          font-weight: bold;
+          font-style: italic;
+          font-family: "Times New Roman";
+        }
+        .gallery {
+          width: 100%;
+          height: 2000px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .gal_picture {
+          background-position: center center;
+          background-size: cover;
+          width: 50%;
+          height: 10%;
+        }
+        .gal_picture_first {
+          width: 100%;
+          height: 10%;
+          background-color: #afab9b;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .gal_picture_first_p {
+          white-space: nowrap;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+        }
+        #gal_picture_2 {
+          background-image: url("picture/img0.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_3 {
+          background-image: url("picture/img1.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_4 {
+          background-image: url("picture/img2.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_5 {
+          background-image: url("picture/img3.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_6 {
+          background-image: url("picture/img4.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_7 {
+          background-image: url("picture/img5.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_8 {
+          background-image: url("picture/img6.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_9 {
+          background-image: url("picture/img7.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_10 {
+          background-image: url("picture/img8.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_11 {
+          background-image: url("picture/img9.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_12 {
+          background-image: url("picture/img10.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_13 {
+          background-image: url("picture/img11.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_14 {
+          background-image: url("picture/img12.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_15 {
+          background-image: url("picture/img13.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_16 {
+          background-image: url("picture/img14.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_17 {
+          background-image: url("picture/img15.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_18 {
+          background-image: url("picture/img16.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        #gal_picture_19 {
+          background-image: url("picture/img17.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        .contact_us {
+          width: 100%;
+          height: 1500px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ccc8b6;
+        }
+        .contact_us_inner {
+          width: 90%;
+          height: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .contact_us_inner_left,
+        .contact_us_inner_right {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+        .contact_us_inner_left_logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .contact_us_inner_left_p2 {
+          font-size: 18px;
+          color: #000000;
+          font-family: "Times New Roman";
+          text-align: center;
+        }
+        .contact_us_inner_left_p1 {
+          white-space: nowrap;
+          font-size: 36px;
+          text-transform: uppercase;
+          color: #010101;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          border: solid 10px #121212;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin: 0;
+        }
+        .contact_us_inner_left_info_work {
+          display: flex;
+          justify-content: space-between;
+        }
+        .contact_us_inner_left_info,
+        .contact_us_inner_left_work {
+          width: 45%;
+        }
+        .contact_us_inner_right_input {
+          opacity: 0.431;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #333333;
+          font-family: "Times New Roman";
+          height: 60px;
+          border: 2px solid #000000;
+          background-color: #ccc8b6;
+          padding-left: 30px;
+        }
+        .contact_us_inner_right_textarea {
+          opacity: 0.431;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #333333;
+          font-family: "Times New Roman";
+          background-color: #ccc8b6;
+          padding-left: 30px;
+          padding-top: 15px;
+          border: 2px solid #000000;
+          height: 220px;
+        }
+        .contact_us_inner_right_button {
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #ffffff;
+          font-weight: bold;
+          font-family: "Times New Roman";
+          height: 60px;
+          background-color: #9a977a;
+        }
+        .map {
+          width: 100%;
+          height: 800px;
+          background-image: url("picture/map.png");
+          background-position: center center;
+          background-size: cover;
+        }
+        footer {
+          width: 100%;
+          height: 500px;
+          background-color: #aeaeae;
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer_top {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          height: 80%;
+          width: 50%;
+          margin-top: 20px;
+        }
+        .footer_bottom {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+        }
+        .copyright_png {
+          width: 15px;
+          height: 15px;
+        }
+        .footer_bottom_p {
+          font-size: 12px;
+          line-height: 22px;
+          color: #000000;
+          font-family: "Roboto";
+          font-weight: bold;
+        }
+        .footer_nav {
+          align-items: center;
+        }
+      }
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="slider">
+      <header>
+        <nav>
+          <ul class="left_ul">
+            <li class="left_li">
+              <a class="menu_a" href="index.html"> home </a>
+            </li>
+            <li class="left_li">
+              <a class="menu_a" href="index.html"> about </a>
+            </li>
+            <li class="left_li">
+              <a class="menu_a" href="index.html"> gallery </a>
+            </li>
+          </ul>
+          <a class="logo_a" href="index.html">
+            <img src="picture/header_element1.png" alt="logo" />
+          </a>
+          <ul class="right_ul">
+            <li class="right_li">
+              <a class="menu_a" href="index.html"> faq </a>
+            </li>
+            <li class="right_li">
+              <a class="menu_a" href="index.html"> find us </a>
+            </li>
+            <li class="right_li">
+              <a class="menu_a" href="index.html"> contact </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="about_us">
+        <div class="about_us_1">
+          <p class="about">about us</p>
+        </div>
+        <div class="about_us_2">
+          <div class="about_us_2_inner">
+            <img
+              class="about_us_2_png"
+              src="picture/tatoo_design.png"
+              alt="logo"
+            />
+            <p class="about_us_2_text_1">
+              Aliquam ac justo interdum, elementum liqula et, condimentum orci.
+              lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p class="about_us_2_text_2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nunc
+              risus eros, ultricies quis erat sit amet, elementum vulputate
+              lorem. Sed at lacinia lectus, quis blandit libero.
+              <br />
+              Quisque ac malesuada lectus. Proin gravida feugiat commodo.
+              Phasellus fermentum sem ut felis vehicula aliquet. Donec rhoncus,
+              mi et euismod dictum, purus lorem vehicula justo, a iaculis mi
+              nulla et risus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="pictrow">
+        <div class="picture" id="picture_1">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_2">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_3">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_4">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_5">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_6">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_7">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_8">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_9">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_10">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_11">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture" id="picture_12">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial_inner">
+          <div class="testimonial_inner_top">
+            <div class="caf_1">
+              <img class="caf_1_img" src="picture/livello_.png" alt="caf" />
+            </div>
+            <div class="testimonial_inner_top_text">
+              <p class="testimonial_inner_top_p">
+                Aliquam ac justo interdum, elementum ligula et, condimentum
+                orci. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <div class="caf_2">
+              <img class="caf_2_img" src="picture/livello_1.png" alt="caf" />
+            </div>
+          </div>
+          <div class="testimonial_inner_bottom">
+            <p class="testimonial_inner_bottom_p">- john doe -</p>
+          </div>
+        </div>
+      </div>
+      <div class="team_row">
+        <div class="team_row_1">
+          <div class="team_pict_1">
+            <p class="team">team</p>
+          </div>
+          <div class="team_pict_2">
+            <div class="team_pict_png_arrow">
+              <img
+                class="team_pict_png"
+                src="picture/img18.png"
+                alt="Corey Miller"
+              />
+              <img class="arrow_png" src="picture/arrow.png" alt="Arrow" />
+            </div>
+            <div class="team_pict_block">
+              <div class="team_pict_block_inner">
+                <p class="team_pict_block_inner_p1">Corey Miller</p>
+                <p class="team_pict_block_inner_p2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nunc
+                  risus eros, ultricies quis erat sit amet, elementum vulputate
+                  lorem. Sed at lacinia lectus, quis blandit libero.
+                  <br />
+                  Quisque ac malesuada lectus. Proin gravida feugiat commodo.
+                  Phasellus fermentum sem ut felis vehicula aliquet. Donec
+                  rhoncus, mi et euismod dictum, purus lorem vehicula justo, a
+                  iaculis mi nulla et risus.
+                </p>
+                <div class="team_links">
+                  <img src="picture/facebook.png" alt="Facebook" />
+                  <img src="picture/twitter.png" alt="Twitter" />
+                  <img src="picture/t.png" alt="Telegram" />
+                  <img src="picture/in.png" alt="LinkedIn" />
+                  <img src="picture/instargam.png" alt="Instargam" />
+                  <img src="picture/g+.png" alt="Google" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team_row_2">
+          <div class="team_pict_3">
+            <div class="team_pict_png_arrow">
+              <img
+                class="team_pict_png"
+                src="picture/img19.png"
+                alt="Kat Von D"
+              />
+              <img class="arrow_png" src="picture/arrow.png" alt="Arrow" />
+            </div>
+            <div class="team_pict_block">
+              <div class="team_pict_block_inner">
+                <p class="team_pict_block_inner_p1">Kat Von D</p>
+                <p class="team_pict_block_inner_p2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nunc
+                  risus eros, ultricies quis erat sit amet, elementum vulputate
+                  lorem. Sed at lacinia lectus, quis blandit libero.
+                  <br />
+                  Quisque ac malesuada lectus. Proin gravida feugiat commodo.
+                  Phasellus fermentum sem ut felis vehicula aliquet. Donec
+                  rhoncus, mi et euismod dictum, purus lorem vehicula justo, a
+                  iaculis mi nulla et risus.
+                </p>
+                <div class="team_links">
+                  <img src="picture/facebook.png" alt="Facebook" />
+                  <img src="picture/twitter.png" alt="Twitter" />
+                  <img src="picture/t.png" alt="Telegram" />
+                  <img src="picture/in.png" alt="LinkedIn" />
+                  <img src="picture/instargam.png" alt="Instargam" />
+                  <img src="picture/g+.png" alt="Google" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team_pict_4">
+            <div class="team_pict_4_block_inner">
+              <p class="team_pict_4_block_inner_p1">Newsletter</p>
+              <p class="team_pict_4_block_inner_p2">
+                Join thousands of other people subscribe to our news
+              </p>
+              <input
+                class="team_pict_4_block_inner_input"
+                type="text"
+                name="insert_email"
+                placeholder="insert email"
+              />
+              <button class="team_pict_4_block_inner_button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="twitter">
+        <div class="twitter_inner">
+          <img src="picture/twitter_white.png" alt="Twitter" />
+          <p class="twitter_inner_p1">
+            RT @collis: Trade growth ideas with other founders. Look for ways to
+            cross promote. Small starups today may be big friends later. (9/10)
+            2 days ago
+          </p>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gal_picture_first">
+          <p class="gal_picture_first_p">Gallery</p>
+        </div>
+        <div class="gal_picture" id="gal_picture_2">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_3">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_4">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_5">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_6">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_7">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_8">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_9">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_10">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_11">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_12">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_13">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_14">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_15">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_16">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_17">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_18">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gal_picture" id="gal_picture_19">
+          <div class="picture_active">
+            <div class="picture_active_inner">
+              <div class="picture_active_inner_element_first_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/lupa.png" alt="Lupa" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/chain.png" alt="Chain" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/idea.png" alt="Idea" />
+                </a>
+              </div>
+              <div class="picture_active_inner_element_second_row">
+                <a class="picture_active_inner_element_a" href="index.html">
+                  <img src="picture/heart.png" alt="Heart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact_us">
+        <div class="contact_us_inner">
+          <div class="contact_us_inner_left">
+            <div class="contact_us_inner_left_logo">
+              <p class="contact_us_inner_left_p1">Contact us</p>
+            </div>
+            <p class="contact_us_inner_left_p2">
+              Aliquam ac justo interdum, elementum ligula et, condimentum orci.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <div class="contact_us_inner_left_info_work">
+              <div class="contact_us_inner_left_info">
+                <p class="contact_us_inner_left_info_p1">INFO:</p>
+                <p class="contact_us_inner_left_info_p2">
+                  PHONE : <strong>+ 123-456-789-456</strong><br />
+                  FAX : <strong>+ 123-456-789-456</strong><br />
+                  EMAIL : <strong>info@inktattoo.net</strong><br />
+                  ADRESS :
+                  <strong>1234 Street Road, City Name</strong>
+                </p>
+              </div>
+              <div class="contact_us_inner_left_work">
+                <p class="contact_us_inner_left_work_p1">WORK HOURS:</p>
+                <p class="contact_us_inner_left_work_p2">
+                  MONDAY - FRIDAY : <strong>09AM - 18PM</strong><br />
+                  SATURDAY : <strong>09AM - 1PM</strong><br />
+                  SUNDAY : <strong>CLOSED</strong><br />
+                </p>
+              </div>
+            </div>
+            <div class="team_links">
+              <img src="picture/facebook.png" alt="Facebook" />
+              <img src="picture/twitter.png" alt="Twitter" />
+              <img src="picture/t.png" alt="Telegram" />
+              <img src="picture/in.png" alt="LinkedIn" />
+              <img src="picture/instargam.png" alt="Instargam" />
+              <img src="picture/g+.png" alt="Google" />
+            </div>
+          </div>
+          <div class="contact_us_inner_right">
+            <input
+              class="contact_us_inner_right_input"
+              type="text"
+              name="insert_name"
+              placeholder="Full Name"
+            />
+            <input
+              class="contact_us_inner_right_input"
+              type="text"
+              name="insert_email"
+              placeholder="Email"
+            />
+            <textarea
+              name="insert_message"
+              class="contact_us_inner_right_textarea"
+              placeholder="Message"
+            ></textarea>
+            <button class="contact_us_inner_right_button">Message</button>
+          </div>
+        </div>
+      </div>
+      <div class="map"></div>
+    </main>
+    <footer>
+      <div class="footer_top">
+        <nav class="footer_nav">
+          <ul class="left_ul">
+            <li class="left_li">
+              <a class="menu_a" href="index.html"> home </a>
+            </li>
+            <li class="left_li">
+              <a class="menu_a" href="index.html"> about </a>
+            </li>
+            <li class="left_li">
+              <a class="menu_a" href="index.html"> gallery </a>
+            </li>
+          </ul>
+          <a class="logo_a" href="index.html">
+            <img src="picture/header_element1.png" alt="logo" />
+          </a>
+          <ul class="right_ul">
+            <li class="right_li">
+              <a class="menu_a" href="index.html"> faq </a>
+            </li>
+            <li class="right_li">
+              <a class="menu_a" href="index.html"> find us </a>
+            </li>
+            <li class="right_li">
+              <a class="menu_a" href="index.html"> contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_bottom">
+        <img class="copyright_png" src="picture/copy.png" alt="Copyright" />
+        <p class="footer_bottom_p">
+          2014 InkTattoo. All right reserved - Designed by theuncreativelab.com
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
